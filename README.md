@@ -53,6 +53,9 @@ The **accuracy and loss for test images** that was kept aside through training, 
 Comparison between the first and second model.
 
 # Limitation
-During evaluating the results, we trained the second model a second time (noted as second run in the notebook) and we spotted a better performance as we will show in the results. So, a limitation of this project is to assess if there is a sensitivity to the splits, for this in the future can be used StratifiedKFold.
+During evaluating the results, we trained the second model a second time (noted as second run in the notebook) and we spotted a better performance as shown and discussed in the notebook. So, a limitation of this project is to assess if there is a sensitivity to the splits, for this in the future can be used StratifiedKFold. <br>
+Also, ethical considerations are discussed in the notebook, this model achievign high accuraccy doesn't mean, that it ready to classify every handwritten digit images, people have different educational background and variety in their handwriting style. In MNIST could also be some bias from the starting images we trained our model. So this task isn't that easy. For future project, we could upload ours handwritten digit images to test if the model could classify correctly, in images outside of the MNIST dataset. <br>
+A bigger task is also classifying handwritten letters, in my university years I always was thinking how can I digitilise my notes to my computer, so there is also this task also to be addressed.
 
-# Results
+In this repository also we added the confusion matrix, the training epochs and the test accuracy of the second model in the second run that you can look for.
+
