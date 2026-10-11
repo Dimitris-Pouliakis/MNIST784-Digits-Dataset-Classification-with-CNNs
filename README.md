@@ -15,7 +15,7 @@ You can find these also in the notebook
 To train our models we used, the popular for starters in the machine learning world, the MNIST784 version 1, provided by openml, that includes 70,000 images with 784 features each one with a pixel value of the 28x28 = 784 pixels images. In the images there are depicted different number digits. You can find sample images of the dataset in the notebook in the corresponding section. 
 
 # Model
-For the construction of the 2 models, one simpler and one deeper one (with 2 Conv2D and 2 Pooling layers) we used **Keras 3 Sequential API**
+For the construction of the 2 models, one simpler and one deeper one (with 2 Conv2D and 2 Pooling layers) we used **Keras 3 Sequential API** <br>
 _Model1:_
 1. Input Layer of the raw normalized greyscale images, Shape: (28, 28, 1)
 2. Convolutional 2D Layer with 32 filters, 3x3 grid (32, 28, 28, 1) procuded feature maps
@@ -25,7 +25,7 @@ _Model1:_
 6. Dropout Layer with a default value of 0.3
 7. Dense Output Layer with 10 neurons, one for each predicted digit with activation "softmax" as it is a 10-class classification digit task
 
-For the second model, we chose to add one extra set of Convolutional and Pooling layer to deepen our model, it was the Option A transformation for the final project:
+For the second model, we chose to add one extra set of Convolutional and Pooling layer to deepen our model, it was the Option A transformation for the final project: <br>
 _Model2:_ <br>
 Added 2 layers between 3. and 4. for previous model
 Extra Convolutional 2D Layer with same parameters
