@@ -7,8 +7,8 @@ Disclaimer: This is a final project for machine learning seminars @AUTH 2026
 The scenario we were interested in was to make a model that classify digits from handwritten images, make an error analysis and a comparison between one model and a second updated one and to assess if it can be deployed as a software for a sorting postal center or a bank, that sorts postal codes or distinct account numbers on handwritter forms correspondingly. It is noted, that this task is a high-stakes one, because a mistake can send letters in a different city or misdirect payments.
 
 # Keras Model
-Backend: **TensorFlow**
-Keras version: **3.13.2**
+Backend: **TensorFlow** <br>
+Keras version: **3.13.2** <br>
 You can find these also in the notebook
 
 # Data
@@ -33,17 +33,17 @@ Extra Pooling Layer
 All the other parameteres stayed the same so we could achieve a fair comparison between the 2 models
 
 # Compiling the Models
-For compiling the models we used the following
-_Optimiser:_ Adam a strong default option with learning rate 0.001
-_Loss:_ "sparse_categorical_crossentropy" as a default for many classes tasks
+For compiling the models we used the following 
+_Optimiser:_ Adam a strong default option with learning rate 0.001 <br>
+_Loss:_ "sparse_categorical_crossentropy" as a default for many classes tasks <br>
 _Metrics:_ "accuracy"
 
 # Fitting the Models
 We used Early Stopping to avoid overfitting, but as we saw in the learning curve of model, an overfitting achieved after epoch 7, so there is a room for improvement
-_Patience:_ 3
-_Monitor Loss:_ "val_loss"
-_Validation Split:_ 10% of the trained data
-_Epochs:_ 15
+_Patience:_ 3 <br>
+_Monitor Loss:_ "val_loss" <br>
+_Validation Split:_ 10% of the trained data <br>
+_Epochs:_ 15 <br>
 _Batch size:_ 128
 
 # Evaluation
