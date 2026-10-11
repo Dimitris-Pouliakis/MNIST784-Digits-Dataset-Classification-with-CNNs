@@ -26,14 +26,14 @@ _Model1:_
 7. Dense Output Layer with 10 neurons, one for each predicted digit with activation "softmax" as it is a 10-class classification digit task
 
 For the second model, we chose to add one extra set of Convolutional and Pooling layer to deepen our model, it was the Option A transformation for the final project:
-_Model2:_
+_Model2:_ <br>
 Added 2 layers between 3. and 4. for previous model
 Extra Convolutional 2D Layer with same parameters
 Extra Pooling Layer
 All the other parameteres stayed the same so we could achieve a fair comparison between the 2 models
 
 # Compiling the Models
-For compiling the models we used the following 
+For compiling the models we used the following <br>
 _Optimiser:_ Adam a strong default option with learning rate 0.001 <br>
 _Loss:_ "sparse_categorical_crossentropy" as a default for many classes tasks <br>
 _Metrics:_ "accuracy"
